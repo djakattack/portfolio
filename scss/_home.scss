@@ -7,17 +7,17 @@
     background: 
         linear-gradient(
             to right,
-            rgba($primary-color, 0.9),
-            rgba($primary-color, 0.3)
+            rgba($primary-color, 0.80),
+            rgba($primary-color, 0.25)
         ),
-        url('../img/model-1.jpg');
+        url('../img/model-3.jpeg');
     background-size: cover;
 
     &__name {
         font-size: 5rem;
         padding-bottom: 1rem;
         margin-top: 1rem;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid set-text-color($primary-color);
 
         &--last {
             color: $secondary-color;

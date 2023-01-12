@@ -6,3 +6,18 @@ $secondary-color: #ff652f;
     margin: 0;
     padding: 0;
 }
+
+
+// allows re-use of this setting.
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+// Changes color based on the lightness of the $primary-color.
+@function set-text-color($color){
+    @if (lightness($color) > 40%) {
+        @return #000;
+    } @else {
+        @return #FFF;
+    }
+}
